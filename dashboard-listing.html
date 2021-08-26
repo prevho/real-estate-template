@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="description" content="" />
+    <meta name="author" content="Precious Iriaevho" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <title>Real Estate Portal</title>
+
+    <link rel="shortcut icon" href="" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="" />
+
+    <!--              Boostrap CSS from CDN 
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+-->
+
+    <!--              fontawesome CDN
+      <script src="https://kit.fontawesome.com/034680d788.js" crossorigin="anonymous"></script>-->
+
+    <!--      Animate CSS-->
+    <link rel="stylesheet" href="assets/css/animate.min.css" />
+
+    <!-- Link to your css file -->
+    <link rel="stylesheet" href="assets/css/media-query.css" />
+    <link rel="stylesheet" href="assets/css/all.css" />
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="assets/css/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+    <style></style>
+</head>
+
+<body>
+    <!-- Start coding here -->
+    <!-- Start coding here -->
+    <!-- Start coding here -->
+    <!-- Start coding here -->
+    <!-- Start coding here -->
+
+    <!-- Header Starts -->
+    <header class="d-flex justify-content-between align-items-center">
+        <div class="container ">
+            <nav class="navbar navbar-expand-xl p-0 ">
+                <div style="width:20%">
+                    <a href="index.html" class="navbar-brand mobile-versio"><img src="assets/images/lpc.png" style="width: 150px" class="img-flui" alt="" /></a>
+                </div>
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="fasse" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse menu" id="navbarSupportedContent" style="">
+
+
+                    <ul class="navbar-nav">
+                        <!-- <li class="nav-item">
+                            <a class="reserve-logo scroll d-none" href="#home"><img
+                                    src="http://moatcohorts.com.ng/c17/precious3/assets/images/preshy.png" alt="" /></a>
+                        </li> -->
+                        <li class="nav-item">
+                            <a class="nav-link scroll" href="result.html">For Sale</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link scroll" href="single.html">For Rent</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link scroll" href="">Agents</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link scroll" href="">Requests</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link scroll" href="">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link scroll" href="">Register</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link scroll" href="">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link scroll headbtn" href="">Post Property</a>
+                        </li>
+                    </ul>
+                    <!--                    <a href="#home" class="navbar-brand scroll"><img src="https://www.propertypro.ng/offers/wp-content/themes/reserville/images/brand.png" alt=""></a>-->
+                    <!--
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link scroll" href="#map">LOCATION</a></li>
+                        <li class="nav-item"><a class="nav-link scroll" href="#construction">CONSTRUCTION UPDATE</a></li>
+                        <li class="nav-item"> <a class="nav-link scroll" href="#developer">ABOUT DEVELOPER</a></li>
+                    </ul>
+-->
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Header Ends -->
+
+
+    <!--Page Title -->
+
+    <div class="pg-opt">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="page-title">Listed Properties <span></span></h1>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Page Title Ends -->
+
+    <!-- Body -->
+
+    <section class="slice bg-white">
+        <div class="wp-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="row voffset-bottom-15">
+                            <div class="col-md-12 text-sm-left mobile-app-voffset-10 listing-index-buttons">
+                                <a class="btn btn-sm btn-base voffset-bottom-15" href="/account/listings/create">
+                                    <span>&nbsp;Add Property&nbsp;</span>
+                                </a>
+                                <div class="btn btn-sm btn-light voffset-bottom-15 dropdown pull-right">
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0)" aria-expanded="fasse"><i class="fas fa-chevron-down"></i> Actions</a>
+                                    <ul class="dropdown-menu dropdown-menu-right">
+                                        <li>
+                                            <a href="javascript:void(0);" onclick="displayDynamicAlert(this);" data-title="Confirm Delete" data-body="Are you sure you want to delete <strong><span class='red-text'>all<span> unpublished listings</strong>?" data-success-action="document.getElementById('delete-unpublished-form').submit();">
+                                                <i class="fas fa-trash"></i> Delete all unpublished listings</a>
+                                        </li>
+                                        <form id="delete-unpublished-form" class="hidden" action="https://lagospropertycentre.com/ajax/delete/unpublished/listings" method="POST">
+                                            <input type="hidden" name="_token" value="G14ycp0PXg5HBNiar87GXpkFR7Onb6yIUoL4SyJH">
+                                        </form>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="alert alert-warning fade in f13">
+                            <p class="f15"><strong>Site Visitors Contact via WhatsApp</strong></p>
+                            <p class="voffset-10">Our site visitors can now contact you via WhatsApp by tapping on your number on our site. If you have not entered a WhatsApp number on your profile, <b><a href="/account/profile/edit" class="underline red-text">update your profile</a> so you do not lose any potential clients</b>.</p>
+                        </div>
+                        <div class="alert alert-danger fade in">
+                            To complete your sign up and <strong>avoid loosing possible property leads</strong>, please enter a <strong>company name</strong>.
+                            <br>
+                            <a class="btn btn-base btn-sm voffset-10" href="/account/profile/edit">
+                                <span>Update Company Name</span>
+                            </a>
+                        </div>
+                        <div class="wp-block default product-list-quick-filters sort-panel light-gray">
+                            <div class="row">
+                                <div class="col-12">
+                                    <strong>Quick Filters</strong>
+                                    <strong class="filterLinkTitle">Featured&nbsp;&nbsp;</strong>
+                                    <ul class="filterLink">
+                                        <li><a onclick="featuredQuickFilter(9);" href="#">Standard Listings</a><span>|</span></li>
+                                        <li><a onclick="featuredQuickFilter(1);" href="#">Regular Featured</a><span>|</span></li>
+                                        <li><a onclick="featuredQuickFilter(2);" href="#">Premium Featured</a><span>|</span></li>
+                                        <li><a onclick="featuredQuickFilter(3);" href="#">Premium Plus Featured</a></li>
+                                    </ul>
+                                    <strong class="filterLinkTitle">Status&nbsp;&nbsp;</strong>
+                                    <ul class="filterLink">
+                                        <li><a onclick="statusQuickFilter('P');" href="#">Published</a><span>|</span></li>
+                                        <li><a onclick="statusQuickFilter('U');" href="#">Unpublished</a><span>|</span></li>
+                                        <li><a onclick="statusQuickFilter('TE');" href="#">Temporarily Expired</a><span>|</span></li>
+                                        <li><a onclick="statusQuickFilter('PE');" href="#">Permanently Expired</a><span>|</span></li>
+                                        <li><a onclick="statusQuickFilter('E');" href="#">All Expired</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-12 voffset-15">
+                                    <i class="red-text fas fa-filter"></i> <a onclick="highlightFilters();" href="/account/listings#filters" class="red-text underline"><strong>More filter options</strong></a>
+                                    <br>
+                                    <span class="more-filter-desc">e.g. location, type, date added</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wp-block default product-list-filters sort-panel light-gray">
+                            <div class="row">
+                                <div class="col-sm-8 col-12">
+                                    <span>Results 1 - 1 of 1</span>
+                                    <hr class="mv-10 hidden-sm hidden-md hidden-lg">
+                                    <div class="pull-right text-right hidden"><i class="red-text fas fa-filter"></i> <a href="/account/listings#filters" class="underline red-text"><strong>Filter Listings</strong></a></div>
+                                </div>
+                                <div class="col-sm-4 text-sm-right">
+                                    <form action="https://lagospropertycentre.com/account/listings" method="get" name="filterForm" id="filterForm" class="form-light">
+                                        <input type="hidden" name="sort" id="sort">
+                                        <div class="sort-filter">
+                                            <select name="filter_order_dd" id="filter_order_dd" onchange="tableOrdering();" class="form-control" size="1">
+                                                <option value="1">Date Created</option>
+                                                <option value="2">Last Refresh Time</option>
+                                            </select>
+                                            <script language="javascript" type="text/javascript">
+                                                function tableOrdering(order, dir, field) {
+                                                    try {
+                                                        var form = document.filterForm;
+                                                        form.sort.value = form.filter_order_dd.value;
+
+                                                        var orderText = form.filter_order_dd.options[form.filter_order_dd.selectedIndex].text;
+
+                                                        form.filter_order_dd.removeAttribute('name');
+
+                                                        ga('send', 'event', 'My Listings', 'Sort', orderText);
+                                                    } catch (error) {}
+
+                                                    document.filterForm.submit();
+                                                }
+
+                                            </script>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="wp-block default product-list-filters light-gray pPagination pPagination-medium hidden-lg hidden-md hidden-sm">
+                        </div>
+
+                        <form action="/account/listings/task" method="post" name="adminForm">
+                            <input type="hidden" name="boxchecked" value="0">
+                            <input type="hidden" name="task" value="">
+                            <input type="hidden" name="event_code" value="">
+                            <input type="hidden" name="_token" value="G14ycp0PXg5HBNiar87GXpkFR7Onb6yIUoL4SyJH">
+                            <a name="933810"></a>
+                            <div class="row property-list ">
+                                <div class="col-md-12">
+                                    <div class="wp-block property list unpublished">
+                                        <input class="hidden" type="checkbox" id="cb0" name="cid[]" value="933810" onchange="isChecked(this.checked);">
+                                        <div class="wp-block-title hidden-xs">
+                                            <h2><a href="/account/listings/933810/edit" hidefocus="true">Fsgrdtfykguhl</a></h2>
+                                        </div>
+                                        <div class="wp-block-body">
+                                            <div class="wp-block-img text-center">
+                                                <a href="/account/listings/933810/edit" hidefocus="true">
+                                                    <div class="wp-block-img-container">
+                                                        <img class="sm-width-min-200-max-250 xs-width-min-200-max-350" src="https://images.lagospropertycentre.com/properties/images/noimage.jpg" alt="Fsgrdtfykguhl, Ikoyi, Lagos, 1 bedroom Mini Flat for Rent" title="Fsgrdtfykguhl, Ikoyi, Lagos, 1 bedroom Mini Flat for Rent">
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                            <div class="wp-block-content clearfix">
+
+                                                <h2 class="hidden-sm hidden-md hidden-lg voffset-bottom-10"><a href="/account/listings/933810/edit" hidefocus="true">Fsgrdtfykguhl</a></h2>
+                                                <a href="/account/listings/933810/edit">
+                                                    <h4 class="content-title">
+                                                        1 bedroom
+                                                        mini flat for rent
+                                                    </h4>
+                                                </a>
+                                                <p><strong><i class="fas fa-map-marker"></i> &nbsp;Ikoyi, Lagos</strong></p>
+                                                <p class="description f12">
+                                                    <i class="fas fa-circle fa-fw"></i> &nbsp;<strong>Ref:</strong> 933810<br>
+                                                    <i class="fas fa-eye fa-fw"></i> &nbsp;<strong>Views:</strong> 0<br>
+                                                    <i class="fas fa-bolt fa-fw"></i>&nbsp;&nbsp;<strong>Boosts:</strong> 0 <br>
+                                                    <i class="fas fa-calendar fa-fw"></i> &nbsp;Added on 30 Apr 2021<br>
+                                                    <i class="fas fa-calendar-alt fa-fw"></i> &nbsp;Last updated on 30 Apr 2021
+                                                </p>
+                                                <span class="pull-left">
+                                                    <span content="NGN" class="price">₦</span><span content="50000.00" class="price">50,000</span><span class="period"> per annum</span> </span>
+                                            </div>
+                                            <p class="alert alert-warning fade in voffset-10 voffset-bottom-0">
+                                                <strong>Not visible to site visitors</strong>
+                                                <br><br>
+                                                This listing cannot be published because <strong>the listing has been randomly selected for a spot check</strong>. It will be reviewed and published. Please do not try to list it again and you do not need to contact us about it. Thank you for your understanding.
+                                            </p>
+                                        </div>
+                                        <div class="wp-block-footer">
+                                            <ul class="aux-info">
+                                                <li class="hidden-xs"><a target="_blank" href="/for-rent/flats-apartments/mini-flats/lagos/ikoyi/933810-fsgrdtfykguhl"><i class="fas fa-eye"></i> View</a></li>
+                                                <li><a href="/account/listings/933810/edit"><i class="fas fa-pencil"></i> Edit</a></li>
+                                                <li><a href="/account/listings/933810/images"><i class="fas fa-image"></i> Pictures</a></li>
+                                                <li><span data-toggle="tooltip" data-placement="top" title="" class="disabled-listing-button" data-original-title="This listing must be PREMIUM FEATURED before it can be boosted"><i class="fas fa-bolt"></i> Boost</span></li>
+                                                <li><span class="disabled-listing-button"><i class="far fa-toggle-off red-text"></i> Unpublished</span></li>
+                                                <li class="hidden-lg hidden-md hidden-sm">
+                                                    <div class="dropdown">
+                                                        <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0)"><i class="fas fa-chevron-down"></i> More</a>
+                                                        <ul class="dropdown-menu dropdown-menu-right">
+                                                            <li><a href="/for-rent/flats-apartments/mini-flats/lagos/ikoyi/933810-fsgrdtfykguhl"><i class="fas fa-eye" target="_blank"></i> View</a></li>
+                                                            <li><a href="/account/listings/933810/statistics"><i class="fas fa-chart-bar"></i> Stats</a></li>
+                                                            <li><a href="javascript:void(0);" onclick="document.getElementById('cb0').checked = true; setSelectedListingRef(933810); selectedToDelete = 0; return listItemTask('cb0','delete', 1, 0); return fasse;"><i class="fas fa-trash"></i> Delete</a></li>
+                                                            <li><a href="/account/listings/933810/premium-plus"><i class="fas fa-gem"></i> Premium<br>Plus</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                                <li class="hidden-xs"><a href="/account/listings/933810/premium-plus"><i class="fas fa-gem"></i> Premium Plus</a></li>
+                                                <li class="hidden-xs">
+                                                    <div class="dropdown">
+                                                        <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0)" aria-expanded="fasse"><i class="fas fa-chevron-down"></i> More</a>
+                                                        <ul class="dropdown-menu dropdown-menu-right">
+                                                            <li class="hidden-xs"><a href="/account/listings/933810/statistics"><i class="fas fa-chart-bar"></i> Stats</a></li>
+                                                            <li class="hidden-xs"><a href="javascript:void(0);" onclick="document.getElementById('cb0').checked = true; setSelectedListingRef(933810); selectedToDelete = 0;  listItemTask('cb0','delete', 1, 0);  return fasse;"><i class="fas fa-trash"></i> Delete</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+
+                        <div class="wp-block default product-list-filters light-gray pPagination">
+                        </div>
+                        <div class="voffset-40 text-xs-center text-sm-left">
+                            <a class="btn btn-sm btn-base btn-icon btn-icon-right btn-spaced-center fa-plus voffset-5 voffset-bottom-5" href="/account/listings/create">
+                                <span>&nbsp;&nbsp;&nbsp;&nbsp;Add Property&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            </a>
+                        </div>
+                        <div class="panel panel-default panel-sidebar-1 announcement voffset-40">
+                            <div class="panel-body text-left">
+                                <h3 class="title">Watch Step-by-step Video Guides</h3>
+                                <p>Step-by-step video guides on how to manage your listings.</p>
+                                <p>
+                                    <i class="fab fa-youtube fa-fw f18 red-text"></i> &nbsp;<a target="_blank" class="underline f18" href="https://www.youtube.com/watch?v=dAq8pi3HnaU">How to list a property</a>
+                                </p>
+                                <p>
+                                    <i class="fab fa-youtube fa-fw f18 red-text"></i> &nbsp;<a target="_blank" class="underline f18" href="https://www.youtube.com/watch?v=6IBInQIU0Co">How to make a listing premium featured</a>
+                                </p>
+                                <p>
+                                    <i class="fab fa-youtube fa-fw f18 red-text"></i> &nbsp;<a target="_blank" class="underline f18" href="https://www.youtube.com/watch?v=nq5MUvAS8BM">How to boost a listing</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="panel panel-default panel-sidebar-1 announcement">
+                            <div class="panel-body text-left">
+                                <h3 class="title">Create a professional <strong>Tenancy Agreement</strong> in <strong>just 10 minutes</strong>.</h3>
+                                <a class="btn btn-alt voffset-15" href="/account/documents/create?type=1">
+                                    <span>Try it Now!</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="panel panel-default panel-sidebar-1 announcement voffset-20">
+                            <div class="panel-body text-left">
+                                <h3 class="title">Do you need help?</h3>
+                                <p>Contact us using the details below.</p>
+                                <p>
+                                    <i class="fas fa-paper-plane fa-fw"></i> &nbsp;<strong>Telegram:</strong> <a target="_blank" class="underline" href="https://t.me/lagospropertycentre">@lagospropertycentre</a>
+                                </p>
+                                <p class="f15 voffset-bottom-0">
+                                    <i class="fas fa-envelope fa-fw"></i> &nbsp;<a target="_blank" href="mailto:support@lagospropertycentre.com">support@lagospropertycentre.com</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="panel panel-default panel-sidebar-1 announcement voffset-20">
+                            <div class="panel-body text-left">
+                                <h3 class="title"><span>Subscription Payment</span></h3>
+                                <p>All bank transfers, cheque and cash payments should be made to:</p>
+                                <p class="f15">
+                                    <strong>Account Name</strong>: Dilmak Solutions Ventures Limited<br>
+                                    <strong>Account Number</strong>: 0461748526<br>
+                                    <strong>Bank</strong>: Guaranty Trust Bank<br>
+                                </p>
+                                <p class="f15">
+                                    — OR —
+                                </p>
+                                <p class="f15">
+                                    <strong>Account Name</strong>: Dilmak Solutions Ventures Limited<br>
+                                    <strong>Account Number</strong>: 1013412370<br>
+                                    <strong>Bank</strong>: Zenith Bank<br>
+                                </p>
+                                <p class="voffset-20">Alternatively, you can pay online using the button below.</p>
+                                <a href="/account/subscriptions/standard" class="btn btn-base btn-pay-online">Pay Online<br><span class="instant-activation"><i class="fas fa-bolt yellow-text"></i> Instant Activation</span></a>
+                            </div>
+                        </div>
+                        <div class="panel panel-default panel-sidebar-1 announcement voffset-20 hidden-ma">
+                            <div class="panel-body text-left">
+                                <h3 class="title"><span>Manage your listings anytime, anywhere!</span></h3>
+                                <p>Download our <strong>Android app</strong> to get quick access to property on lagos Property Centre from your mobile phone.</p>
+                                <a target="_blank" href="https://play.google.com/store/apps/details?id=com.lagospropertycentre.app&amp;utm_source=global_co&amp;utm_medium=prtnr&amp;utm_content=Mar2515&amp;utm_campaign=PartBadge&amp;pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"><img class="google-play" alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png" width="250"></a>
+                                <a target="_blank" href="https://itunes.apple.com/us/app/lagos-property-centre/id1125813120"><img alt="Get it on App Store" src="https://ddo5o3z2xgpp2.cloudfront.net/9c884cd9-c68f-41ef-9007-aee784b116c7/images/download-on-the-apple-app-store.svg" width="220"></a>
+                            </div>
+                        </div>
+                        <div class="panel panel-default panel-sidebar-1 announcement voffset-20 hidden-ma">
+                            <div class="panel-body text-left">
+                                <h3 class="title"><span>Our Rules</span></h3>
+                                <ul class="list-check">
+                                    <li><i class="fas fa-check"></i> Only list property in line with our property listing rules. <a class="underline" target="_blank" href="https://lagospropertycentre.zendesk.com/hc/en-us/articles/360011177239-Property-Listing-Rules">Read more</a></li>
+                                    <li><i class="fas fa-check"></i> Only actual pictures of the property being advertised are allowed. <a class="underline" target="_blank" href="https://lagospropertycentre.zendesk.com/hc/en-us/articles/208409483-Notice-of-change-to-policy-for-pictures-for-property-listings">Read more</a></li>
+                                    <li><i class="fas fa-check"></i> Other terms <a class="underline" target="_blank" href="/terms-of-use">Read more</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="sidebar">
+                            <div class="panel panel-default panel-sidebar-1 hidden-ma">
+                                <div class="panel-heading">
+                                    <h2><i class="fas fa-chart-bar"></i>&nbsp; Quick Statistics</h2>
+                                </div>
+                                <div class="panel-body bb">
+                                    Published Listings:
+                                    <strong>0</strong>
+                                    <br>
+                                    Unpublished Listings:
+                                    <strong>1</strong>
+                                    <br>
+                                    Total Listings:
+                                    <strong>1</strong>
+                                </div>
+                                <div class="panel-body bb">
+                                    Regular Featured Listings:
+                                    <strong>0</strong>
+                                    <br>
+                                    Premium Featured Listings:
+                                    <strong>0</strong>
+                                    <br>
+                                    Premium Plus Featured Listings:
+                                    <strong>0</strong>
+                                    <br>
+                                    Total Featured Listings:
+                                    <strong>0</strong>
+                                </div>
+                                <div class="panel-body">
+                                    <a target="_blank" class="underline" href="/types-of-featured-listings-premium-vs-regular">Find out the difference between <strong>regular featured</strong> and <strong>premium featured</strong> listings</a>
+                                </div>
+                            </div>
+
+                            <a id="filters"></a>
+                            <div id="advancedSearchFilters" class="panel panel-default panel-sidebar-1">
+                                <div class="panel-heading">
+                                    <h2><i class="fas fa-filter"></i>&nbsp; Filter Your Listings</h2>
+                                </div>
+                                <div class="panel-body">
+                                    <form name="search_jsForm" id="search_jsForm" action="/account/listings" method="get" class="form-light sky-form">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <div class="form-group">
+                                                    <label>State</label>
+                                                    <select name="sid" id="sid" class="form-control" onchange="changeLocalityList('sid','lid');">
+                                                        <option value="0" selected="selected">All States</option>
+                                                        <optgroup label="Popular States">
+                                                            <option value="1">Abuja</option>
+                                                            <option value="2">Lagos</option>
+                                                            <option value="29">Ogun</option>
+                                                            <option value="34">Rivers</option>
+                                                        </optgroup>
+                                                        <optgroup label="Other States">
+                                                            <option value="4">Abia</option>
+                                                            <option value="1">Abuja</option>
+                                                            <option value="5">Adamawa</option>
+                                                            <option value="6">Akwa Ibom</option>
+                                                            <option value="7">Anambra</option>
+                                                            <option value="8">Bauchi</option>
+                                                            <option value="9">Bayelsa</option>
+                                                            <option value="10">Benue</option>
+                                                            <option value="11">Borno</option>
+                                                            <option value="12">Cross River</option>
+                                                            <option value="13">Delta</option>
+                                                            <option value="14">Ebonyi</option>
+                                                            <option value="15">Edo</option>
+                                                            <option value="16">Ekiti</option>
+                                                            <option value="17">Enugu</option>
+                                                            <option value="18">Gombe</option>
+                                                            <option value="19">Imo</option>
+                                                            <option value="20">Jigawa</option>
+                                                            <option value="21">Kaduna</option>
+                                                            <option value="22">Kano</option>
+                                                            <option value="23">Katsina</option>
+                                                            <option value="24">Kebbi</option>
+                                                            <option value="25">Kogi</option>
+                                                            <option value="26">Kwara</option>
+                                                            <option value="2">Lagos</option>
+                                                            <option value="27">Nasarawa</option>
+                                                            <option value="28">Niger</option>
+                                                            <option value="29">Ogun</option>
+                                                            <option value="30">Ondo</option>
+                                                            <option value="31">Osun</option>
+                                                            <option value="32">Oyo</option>
+                                                            <option value="33">Plateau</option>
+                                                            <option value="34">Rivers</option>
+                                                            <option value="35">Sokoto</option>
+                                                            <option value="36">Taraba</option>
+                                                            <option value="37">Yobe</option>
+                                                            <option value="38">Zamfara</option>
+                                                        </optgroup>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="form-group">
+                                                    <label>Locality</label>
+                                                    <select name="lid" id="lid" class="form-control">
+                                                        <option value="0" selected="selected">All Localities</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <div class="form-group">
+                                                    <label>Category</label>
+                                                    <select name="cid" id="cid" class="form-control" onchange="changeTypeList();">
+                                                        <option value="0" selected="selected">All Categories</option>
+                                                        <option value="1">For Rent</option>
+                                                        <option value="2">For Sale</option>
+                                                        <option value="5">Joint Venture</option>
+                                                        <option value="4">Short Let</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="form-group">
+                                                    <label>Type</label>
+                                                    <select name="tid" id="tid" class="form-control">
+                                                        <option value="0" selected="selected">All Types</option>
+                                                        <option value="1">Flat</option>
+                                                        <option value="2">House</option>
+                                                        <option value="5">Land</option>
+                                                        <option value="3">Commercial Property</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <div class="form-group">
+                                                    <label>Featured</label>
+                                                    <select name="filter_featured" id="filter_featured" class="form-control">
+                                                        <option value="0">All Listings</option>
+                                                        <option value="9">Standard Listings</option>
+                                                        <option value="1">Regular Featured</option>
+                                                        <option value="2">Premium Featured</option>
+                                                        <option value="3">Premium Plus Featured</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="form-group">
+                                                    <label>Status</label>
+                                                    <select name="filter_state" id="filter_state" class="form-control">
+                                                        <option value="" selected="selected">Any Status</option>
+                                                        <option value="P">Published</option>
+                                                        <option value="U">Unpublished</option>
+                                                        <option value="E">All Expired</option>
+                                                        <option value="TE">Temporarily Expired</option>
+                                                        <option value="PE">Permanently Expired</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <div class="form-group">
+                                                    <label>Total Area</label>
+                                                    <input name="filter_total_area" id="filter_total_area" value="" class="form-control" type="text" min="0" autocomplete="off">
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="form-group">
+                                                    <label>Property Ref.</label>
+                                                    <input name="filter_id" id="filter_id" value="" class="form-control" type="number" min="0" autocomplete="off">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <div class="form-group">
+                                                    <label>Date Added</label>
+                                                    <label class="input">
+                                                        <i class="icon-append fas fa-calendar-alt"></i>
+                                                        <input name="filter_date_added_from" id="filter_date_added_from" readonly="readonly" value="" class="form-control" type="text" placeholder="From" autocomplete="off">
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="form-group">
+                                                    <label>&nbsp;</label>
+                                                    <label class="input">
+                                                        <i class="icon-append fas fa-calendar-alt"></i>
+                                                        <input name="filter_date_added_to" id="filter_date_added_to" readonly="readonly" value="" class="form-control" type="text" placeholder="To" autocomplete="off">
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="form-group">
+                                                    <label>Date Boosted</label>
+                                                    <select name="filter_date_boosted" id="filter_date_boosted" class="form-control">
+                                                        <option value="">Any</option>
+                                                        <option value="B1">Boosted in Last 24 Hours</option>
+                                                        <option value="B7">Boosted in Last 7 Days</option>
+                                                        <option value="B14">Boosted in Last 14 Days</option>
+                                                        <option value="B30">Boosted in Last 30 Days</option>
+                                                        <option value="NB1">Not Boosted in Last 24 Hours</option>
+                                                        <option value="NB7">Not Boosted in Last 7 Days</option>
+                                                        <option value="NB14">Not Boosted in Last 14 Days</option>
+                                                        <option value="NB30">Not Boosted in Last 30 Days</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="form-group">
+                                                    <label>Keywords</label>
+                                                    <input name="filter_keywords" id="filter_keywords" value="" class="form-control" type="text" autocomplete="off">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <button type="submit" class="btn btn-block btn-alt btn-icon btn-icon-right btn-search">
+                                                    <span>Filter</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="panel panel-default panel-sidebar-1 hidden-ma">
+                                <div class="panel-heading">
+                                    <h2><i class="fas fa-credit-card-blank"></i>&nbsp; About Your Current Subscription</h2>
+                                </div>
+                                <div class="panel-body bb">
+                                    Plan: <strong class="green-text">Free</strong>
+                                </div>
+                                <div class="panel-body bb">
+                                    Published Properties Allowed:
+                                    <strong>1</strong>
+                                    <br>
+                                    Published Properties Used:
+                                    <strong>0</strong>
+                                    <br>
+                                    Published Properties Available:
+                                    <strong>1</strong>
+                                </div>
+                                <div class="panel-body bb">
+                                    Premium Featured Properties Allowed:
+                                    <strong>0</strong>
+                                    <br>
+                                    Premium Featured Properties Used:
+                                    <strong>0</strong>
+                                    <br>
+                                    Premium Featured Properties Available:
+                                    <strong>0</strong>
+                                </div>
+                                <div class="panel-body bb">
+                                    Premium Property Boosts Allowed:
+                                    <strong>0</strong>
+                                    <br>
+                                    Premium Property Boosts Used:
+                                    <strong>0</strong>
+                                    <br>
+                                    Premium Property Boosts Available:
+                                    <strong>0</strong>
+                                    <a target="_blank" class="underline voffset-5 pull-left" href="https://lagospropertycentre.zendesk.com/hc/en-us/articles/360002036232">Find out how premium boosts work</a>
+                                </div>
+                                <div class="panel-body">
+                                    Account ID: <strong>E122673</strong>
+                                    <br>
+                                    <a class="underline" href="/account/subscriptions/standard">View your subscription details</a>
+                                </div>
+                            </div>
+                            <div class="panel panel-default panel-sidebar-1 announcement">
+                                <div class="panel-body text-center">
+                                    <h3 class="title">Offer! - Verify your account and <strong>get one month of Silver Subscription worth ₦5,000</strong>.</h3> To give our site visitors more confidence in doing business with your company, it's important you become a verified estate agent on lagos Property Centre.
+                                    <br>
+                                    <a target="_blank" class="btn btn-alt voffset-15" href="/how-to-get-verified">
+                                        <span>Get Verified Now!</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="panel panel-default panel-sidebar-1 hidden-ma">
+                                <div class="panel-heading">
+                                    <h2>Contact lagos Property Centre</h2>
+                                </div>
+                                <div class="panel-body">
+                                    <p>
+                                        <i class="fas fa-paper-plane fa-fw"></i> &nbsp;<strong>Telegram:</strong> <a target="_blank" class="underline" href="https://t.me/lagospropertycentre">@lagospropertycentre</a>
+                                    </p>
+                                    <i class="fas fa-envelope fa-fw"></i> &nbsp;<a target="_blank" href="mailto:support@lagospropertycentre.com">support@lagospropertycentre.com</a>
+                                </div>
+                            </div>
+                            <div class="panel panel-default panel-sidebar-1 announcement">
+                                <div class="panel-body text-center">
+                                    <h3 class="title">Get a personalized <strong>business website</strong>! It's free.</h3>
+                                    Yes, we mean it. You can have your very own property website.
+                                    Simply <strong><a target="_blank" onclick="ga('send', 'event', 'My Listed Property', 'Agent Verification', 'free website link');" href="/how-to-get-verified">verify your account</a></strong> to get started.
+                                    <br>
+                                    <a target="_blank" class="btn btn-alt voffset-15" href="/how-to-get-verified">
+                                        <span>Get Verified Now!</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="panel panel-default panel-sidebar-1 announcement">
+                                <div class="panel-body text-center">
+                                    <h3 class="title"><strong>Feature your company</strong> on the lagos Property Centre homepage.</h3>
+                                    <a target="_blank" class="btn btn-alt voffset-15" href="/featured-real-estate-company-adverts">
+                                        <span>Find out how!</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="hidden-xs hidden-sm">
+                                <div class="panel panel-default no-border">
+                                    <div class="panel-body text-center">
+                                        <div id="div-gpt-ad-1412976797528-2" class="ad-600">
+                                            <script type="text/javascript">
+                                                googletag.cmd.push(function() {
+                                                    googletag.display('div-gpt-ad-1412976797528-2');
+                                                });
+
+                                            </script>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--  Body Ends -->
+
+    <div class="container hidden-xs hidden-sm hidden-ma">
+        <div class="row">
+            <div class="col-sm-12">
+                <ol itemscope="" itemtype="http://schema.org/BreadcrumbList" class="breadcrumb">
+                    <li><a href="/">Home</a></li>
+                    <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                        <a itemtype="http://schema.org/Thing" itemprop="item" href="/account">
+                            <span itemprop="name">Account</span>
+                        </a>
+                        <meta itemprop="position" content="1">
+                    </li>
+                    <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                        <a itemtype="http://schema.org/Thing" itemprop="item" href="/account/listings">
+                            <span itemprop="name">Listings</span>
+                        </a>
+                        <meta itemprop="position" content="2">
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--    Footer -->
+    <footer class="footer hidden-ma ">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="col">
+                        <h4>About Us</h4>
+                        <p>Lagos Property Centre (LPC) is a leading property website in Lagos, lagos with property listings for sale, rent and lease. We offer property seekers an easy way to find details of property in Lagos like homes, houses, lands, shops, office spaces and other commercial property. </p><a href="/about-us" class="btn btn-base">Learn more</a>
+                    </div>
+                    <!--
+                    <div class="col voffset-40">
+                        <h4>Advertise with Us</h4>
+                        <ul>
+                            <li class=""><a href="/advertise-list-property">Advertise/Market Your Property</a></li>
+                            <li class=""><a href="/featured-real-estate-company-adverts">Featured Real Estate Companies</a></li>
+                            <li class=""><a href="/banner-ads">Place Banner Adverts</a></li>
+                        </ul>
+                    </div>
+-->
+                </div>
+                <div class="col-md-3 col-md-offset-1">
+                    <!--
+              Lekki
+-->
+                    <div class="col voffset-40">
+                        <h4>Popular Property</h4>
+                        <ul>
+                            <li class=""><a href="/for-rent/flats-apartments/abuja/showtype">Flats for rent in Lekki</a></li>
+                            <li class=""><a href="/for-rent/houses/abuja/showtype">Houses for rent in Lekki</a></li>
+                            <li class=""><a href="/for-sale/houses/abuja/showtype">Houses for sale in Lekki</a></li>
+                            <li class=""><a href="/for-sale/land/abuja/showtype">Land for sale in Lekki</a></li>
+                            <li class=""><a href="/for-rent/flats-apartments/mini-flats/abuja/showtype">Mini flats for rent in Lekki</a></li>
+                            <li class=""><a href="/for-rent/flats-apartments/self-contained/abuja/showtype">Self contained for rent in Lekki</a></li>
+                            <li class=""><a href="/for-rent/flats-apartments/lagos/showtype">Flats for rent in Ikeja</a></li>
+                            <li class=""><a href="/for-rent/houses/lagos/showtype">Houses for rent in Ikeja</a></li>
+                            <li class=""><a href="/for-sale/houses/lagos/showtype">Houses for sale in Ikeja</a></li>
+                            <li class=""><a href="/for-sale/land/lagos/showtype">Land for sale in Ikeja</a></li>
+                            <li class=""><a href="/for-rent/flats-apartments/mini-flats/lagos/showtype">Mini flats for rent in Ikeja</a></li>
+                            <li class=""><a href="/for-rent/flats-apartments/self-contained/lagos/showtype">Self contained for rent in Ikeja</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="col">
+                        <h4>Companies</h4>
+                        <ul>
+                            <li class=""><a href="/agents">Estate Agents</a></li>
+                            <li class=""><a href="/developers">Property Developers</a></li>
+                        </ul>
+                    </div>
+                    <div class="col voffset-40">
+                        <h4>Useful Links</h4>
+                        <ul>
+                            <li class=""><a href="/blog">Property Blog</a></li>
+                            <li class=""><a href="/contact-us">Contact Us</a></li>
+                            <li class=""><a href="/privacy-policy">Privacy Policy</a></li>
+                            <li class=""><a href="/terms-of-use">Terms of Use</a></li>
+                            <li class=""><a href="/frequently-asked-questions">FAQs</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="col voffset-40">
+                        <h4>Advertise with Us</h4>
+                        <ul>
+                            <li class=""><a href="/advertise-list-property">Advertise/Market Your Property</a></li>
+                            <li class=""><a href="/featured-real-estate-company-adverts">Featured Real Estate Companies</a></li>
+                            <li class=""><a href="/banner-ads">Place Banner Adverts</a></li>
+                        </ul>
+                    </div>
+                    <div class="col col-social-icons">
+                        <h4>Follow us</h4>
+                        <a rel="nofollow" target="_blank" href=""><i class="fab fa-facebook"></i></a>
+                        <a rel="nofollow" target="_blank" href=""><i class="fab fa-twitter"></i></a>
+                        <a rel="nofollow" target="_blank" href=""><i class="fab fa-linkedin"></i></a>
+                        <a rel="nofollow" target="_blank" href=""><i class="fab fa-youtube"></i></a>
+                    </div>
+                    <!--
+                    <div class="col">
+                        <a href="/mobile-apps">
+                            <h4 class="voffset-bottom-10 voffset-30">Download our Mobile App</h4>
+                        </a>
+                        <a rel="nofollow" target="_blank" href="https://play.google.com/store/apps/details?id=com.lagospropertycentre.app&amp;utm_source=global_co&amp;utm_medium=prtnr&amp;utm_content=Mar2515&amp;utm_campaign=PartBadge&amp;pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"><img class="google-play" alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png" width="150"></a>
+                        <a rel="nofollow" target="_blank" href="https://itunes.apple.com/us/app/lagos-property-centre/id1125813120"><img alt="Get it on App Store" src="https://assets.lagospropertycentre.com/1b8a9ec7-471e-4c3c-884c-d7462b2488a7/images/download-on-the-apple-app-store.svg" width="130"></a>
+                    </div>
+-->
+                    <!--
+                    <div class="col">
+                        <h4 class="voffset-40">Other Regions</h4>
+                        <ul>
+                            <li class=""><a target="_blank" href="https://kenyapropertycentre.com">Kenya Property Centre</a></li>
+                            <li class=""><a target="_blank" href="https://ghanapropertycentre.com">Ghana Property Centre</a></li>
+                            <li class=""><a target="_blank" href="https://ugandapropertycentre.com">Uganda Property Centre</a></li>
+                            <li class=""><a target="_blank" href="https://ethiopiapropertycentre.com">Ethiopia Property Centre</a></li>
+                        </ul>
+                    </div>
+-->
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-lg-12 copyright">
+                    2021 © Lagos Property Centre. All rights reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--    Footer Ends-->
+
+    <!-- Coding End -->
+    <!-- Coding End -->
+    <!-- Coding End -->
+    <!-- Coding End -->
+    <!-- Coding End -->
+
+    <!-- Java script-->
+
+    <!-- do not forget download jquery (http://jquery.com/download/) -->
+    <script src="assets/js/jquery-3.6.0.js" type='text/javascript'></script>
+    <!-- Bootstrap bundle for full components support -->
+    <script src="assets/js/bootstrap/bootstrap.bundle.min.js" type="text/javascript"></script>
+
+
+    <script src="assets/js/core.min.js"></script>
+
+    <script src="assets/js/script.js"></script>
+
+    <!--  Popper 
+<script src="js/popper.min.js" type='text/javascript'></script>
+-->
+
+
+    <!-- do not forget download jquery (http://jquery.com/download/)-->
+    <script src="assets/js/main.js" type="text/javascript"></script>
+
+    <!--              Boostrap JS from CDN -->
+    <!--    Bootstrap CDN
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+ -->
+</body>
+
+</html>
